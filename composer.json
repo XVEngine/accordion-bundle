@@ -1,0 +1,21 @@
+{
+    "name": "xvengine/accordion-bundle",
+    "description": "Accordion Bundle",
+	"type" : "xvengine-bundle",
+    "authors": [
+        {
+            "name": "Krzysztof Bednarczyk",
+            "email": "admin@bordeux.net",
+            "homepage": "http://bednarczyk.me"
+        }
+    ],
+    "require": {
+		"xvengine/core": "1.*"
+	},
+    "autoload": {
+        "psr-0": {
+            "XVEngine\\Bundle\\AccordionBundle" : ""
+        }
+    },
+    "target-dir": "XVEngine/Bundle/AccordionBundle"
+}

@@ -1,0 +1,75 @@
+xv-accordion {
+  display: block;
+  height: 100%;
+  $headerSize : 50px;
+
+  > aside {
+    height: $headerSize;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    position: relative;
+
+    > a {
+      color: #FFF;
+      height: $headerSize;
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #2f2f2f;
+      background: $main-color;
+      padding: 10px;
+
+
+      > h3 {
+        font-weight: 900;
+        color: inherit;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0;
+        width: 100%;
+      }
+
+      > i {
+        display: block;
+        &.icon-slide-up {
+          display: none;
+        }
+      }
+    }
+
+    > section {
+      position: absolute;
+      left: 0;
+      right:0;
+      top: $headerSize;
+      bottom: 0;
+      overflow: hidden;
+    }
+
+
+    &.active {
+      height: 100%;
+
+
+      > a {
+        color: $main-color2;
+        > i {
+          &.icon-slide-up {
+            display: block;
+          }
+
+          &.icon-menu {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @for $i from 1 through 15 { // max 15 elements
+    &.count-#{$i} > aside.active {
+      height: calc(100% - #{($i - 1)*$headerSize})
+    }
+  }
+
+}

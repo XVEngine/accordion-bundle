@@ -1,6 +1,6 @@
 <?php
 
-namespace XVEngine\Bundle\AccordinBundle\Component\Accordion;
+namespace XVEngine\Bundle\AccordionBundle\Component\Accordion;
 
 use JsonSerializable;
 use XVEngine\Core\Component\AbstractComponent;

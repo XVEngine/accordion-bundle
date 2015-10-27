@@ -1,6 +1,6 @@
 <?php
 
-namespace XVEngine\Bundle\AccordinBundle\Component\Accordion;
+namespace XVEngine\Bundle\AccordionBundle\Component\Accordion;
 
 use XVEngine\Core\Component\AbstractComponent;
 
@@ -16,10 +16,10 @@ class AccordionComponent extends AbstractComponent {
 
 
     /**
-     * @param AccordinComponentItem $tab
+     * @param AccordionComponentItem $tab
      * @return $this
      */
-    public function addItem(AccordinComponentItem $tab) {
+    public function addItem(AccordionComponentItem $tab) {
         $this->items[] = $tab;
         return $this;
     }

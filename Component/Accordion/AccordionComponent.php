@@ -10,7 +10,7 @@ class AccordionComponent extends AbstractComponent {
     public $items = [];
 
     public function initialize() {
-        $this->setComponentName('tab.accordinComponent');
+        $this->setComponentName('accordion.accordionComponent');
         $this->setParamByRef("items", $this->items);
     }
 
